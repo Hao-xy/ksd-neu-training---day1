@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <targets>
+      <target name="WSL - Ubuntu" type="wsl" uuid="9822cfae-682e-4a14-86e1-b0847d25d8a4">
+        <config>
+          <option name="distributionMsId" value="Ubuntu" />
+          <option name="projectRootOnTarget" value="/mnt/e/IntelliJ IDEA 2021.3.3/jbr/bin&#10;/ksd-neu-training---day1" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="homePath" value="/usr/lib/jvm/java-11-openjdk-amd64" />
+            <option name="javaVersionString" value="11.0.15" />
+          </config>
+        </ContributedStateBase>
+      </target>
+      <target name="WSL - Ubuntu2" type="wsl" uuid="78fff493-3e26-4903-88e3-dad7f5394185">
+        <config>
+          <option name="distributionMsId" value="Ubuntu" />
+          <option name="projectRootOnTarget" value="/mnt/e/IntelliJ IDEA 2021.3.3/jbr/bin&#10;/ksd-neu-training---day1" />
+        </config>
+        <ContributedStateBase type="GradleRuntime">
+          <config>
+            <option name="homePath" value="/usr/share/groovy" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>
