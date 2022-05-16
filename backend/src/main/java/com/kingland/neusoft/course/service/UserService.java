@@ -3,6 +3,7 @@ package com.kingland.neusoft.course.service;
 import com.kingland.neusoft.course.config.PasswordEncoderConfig;
 import com.kingland.neusoft.course.mapper.UserMapper;
 import com.kingland.neusoft.course.mapper.dao.UserModel;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -14,9 +15,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-    //    @Autowired
+      @Autowired
     private final UserMapper userMapper;
-    //    @Autowired
+      @Autowired
     private final PasswordEncoder passwordEncoder;
 
     public UserService(UserMapper userMapper, PasswordEncoder passwordEncoder) {

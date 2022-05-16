@@ -25,6 +25,18 @@
           </config>
         </ContributedStateBase>
       </target>
+      <target name="root@1.117.64.80:22" type="ssh/sftp" uuid="e7c934cc-f28a-421f-a3fc-a690210238ab">
+        <config>
+          <option name="projectRootOnTarget" value="/root/ksd-neu-training---day1" />
+          <option name="serverName" value="root@1.117.64.80:22 password" />
+        </config>
+        <ContributedStateBase type="JavaLanguageRuntime">
+          <config>
+            <option name="homePath" value="/usr/lib/jvm/java-1.11.0-openjdk-amd64" />
+            <option name="javaVersionString" value="11.0.15" />
+          </config>
+        </ContributedStateBase>
+      </target>
     </targets>
   </component>
 </project>
