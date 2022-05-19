@@ -80,10 +80,11 @@ public class UserController {
     @PreAuthorize("hasAnyAuthority('role_admin')")
     public ResponseEntity deleteUser(@PathVariable("id") Long userId) {
         if (userService.deleteUser(userId) == 1) {
-            //204
+            // 204
             return ResponseEntity.noContent().build();
+        } else {
+            // 404
+            return ResponseEntity.notFound().build();
         }
-        //404
-        return ResponseEntity.notFound().build();
     }
 }
