@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# ksd-neu-training
-important
-=======
 # training-course
 
 # 大作业
@@ -10,4 +6,3 @@ important
 - 至少添加一个功能点，可以是一个新页面，一个既有页面的新功能，或者一个后端的新逻辑
 - 代码可以成功运行
 - 提交至GitHub或者Gitee，并附上提交说明，注意是公开项目需要能访问查看！！！
->>>>>>> 139407c6f8c81966e614d49e3db1d264ba72e7ae
