@@ -16,7 +16,7 @@ The system architecture is as follows.
 ```plantuml
 
 @startuml
-!theme plain
+
 top to bottom direction
 skinparam linetype ortho
 

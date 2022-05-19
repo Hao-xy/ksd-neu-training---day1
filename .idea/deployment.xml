@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="xyh" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="xyh">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/ksd" local="$PROJECT_DIR$" web="/ksd" />
+            <mapping deploy="/ksd" local="$PROJECT_DIR$/backend/src/test" web="/ksd" />
+            <mapping deploy="/ksd" local="$PROJECT_DIR$/backend/src/main" web="/ksd" />
+            <mapping deploy="/ksd" local="$PROJECT_DIR$/backend" web="/ksd" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

@@ -75,4 +75,4 @@ editUser: path: /admin/user/:id \n component: edit-user.component.ts
 users: path: /admin/users \n component: user-list.component.ts
 
 @enduml
-```
+
