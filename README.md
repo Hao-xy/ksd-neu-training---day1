@@ -1,2 +1,2 @@
-# ksd-neu-training---day1
+# ksd-neu-training
 important
