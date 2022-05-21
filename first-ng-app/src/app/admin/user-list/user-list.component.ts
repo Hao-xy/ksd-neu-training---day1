@@ -21,10 +21,6 @@ export class UserListComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // this._userApiService.count().subscribe((response) => {
-    //   const count = response.count;
-    //   this.msgs = [{summary: `${count} users`, severity: "info"}];
-    // })
     this._userApiService.count().subscribe(({count}) => {
       this.msgs = [{summary: `${count} users`, severity: "info"}];
     })
@@ -45,13 +41,19 @@ export class UserListComponent implements OnInit {
       icon: 'pi pi-exclamation-triangle',
       accept: () => {
         //confirm action
-        this._userApiService.delete(id).subscribe(() => {
-          // reload user list
-          this.ngOnInit();
+        this._userApiService.delete(id).subscribe({
+          next: () => {
+            // reload user list
+            this.ngOnInit();
+          },
+          error: (message) => {
+            alert(JSON.stringify(message));
+          }
         })
       },
       reject: () => {
         //reject action
+        console.log("master branch")
       }
     });
   }
