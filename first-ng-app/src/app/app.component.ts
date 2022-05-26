@@ -22,10 +22,14 @@ export class AppComponent {
       label: 'Add User',
       routerLink: 'admin/user/new'
     },
-   
+
     {
       label: 'Login',
       routerLink: 'auth'
+    },
+    {
+      label: 'Main',
+      routerLink: 'main'
     },
     {
       label: 'Logout',
