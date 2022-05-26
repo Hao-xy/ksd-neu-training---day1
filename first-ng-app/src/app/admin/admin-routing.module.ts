@@ -4,6 +4,7 @@ import {AdminComponent} from "./admin.component";
 import {EditUserComponent} from "./edit-user/edit-user.component";
 import {UserListComponent} from "./user-list/user-list.component";
 import {ViewUserComponent} from "./view-user/view-user.component";
+import {MainComponent} from "./main/main.component";
 
 const routes: Routes = [
   {
@@ -21,7 +22,7 @@ const routes: Routes = [
   {
     path: 'users',
     component: UserListComponent
-  }
+  },
 ];
 
 @NgModule({

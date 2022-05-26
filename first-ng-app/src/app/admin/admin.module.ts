@@ -18,7 +18,8 @@ import {MessageModule} from 'primeng/message';
 import {TableModule} from "primeng/table";
 import {ViewUserComponent} from './view-user/view-user.component';
 import {ConfirmPopupModule} from 'primeng/confirmpopup';
-import { MainComponent } from './main/main.component';
+import {MainComponent} from "./main/main.component";
+
 
 @NgModule({
   declarations: [

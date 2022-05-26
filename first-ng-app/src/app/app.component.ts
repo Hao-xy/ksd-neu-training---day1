@@ -13,6 +13,9 @@ export class AppComponent {
     {
       label: 'Home',
       routerLink: 'admin',
+    },{
+      label: 'Main',
+      routerLink: 'Main'
     },
     {
       label: 'Users',
@@ -27,10 +30,7 @@ export class AppComponent {
       label: 'Login',
       routerLink: 'auth'
     },
-    {
-      label: 'Main',
-      routerLink: 'main'
-    },
+
     {
       label: 'Logout',
       command: () => {

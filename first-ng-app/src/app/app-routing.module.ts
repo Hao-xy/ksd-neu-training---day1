@@ -10,14 +10,15 @@ const routes: Routes = [
   {
     path: 'admin',
     loadChildren: adminModule
-  }, {
+  },  {
+    path: 'Main',
+    component: MainComponent
+  },
+  {
     path: 'auth',
     component: AuthComponent
   },
-  {
-    path: 'Main',
-    component: MainComponent
-  }
+
 ];
 
 @NgModule({
