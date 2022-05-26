@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Message} from "primeng/api";
 import {UserApiService} from "../core/api/user-api.service";
 import {HttpClient} from "@angular/common/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-auth',
@@ -14,8 +15,10 @@ export class AuthComponent {
   loginForm: FormGroup;
   msgs: Message[] = [];
 
+
   constructor(private readonly formBuilder: FormBuilder,
-              private readonly httpClient: HttpClient) {
+              private readonly httpClient: HttpClient,
+              private readonly _router: Router) {
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required],
@@ -30,8 +33,12 @@ export class AuthComponent {
     this.httpClient.post<any>(`/login?username=${this.loginForm.value.username}&password=${this.loginForm.value.password}`, {})
       .subscribe(result => {
         this.msgs = [{severity: 'success', detail: 'Login Success.'}];
+
       }, ({error}) => {
         this.msgs = [{severity: 'error', detail: error.message}];
       });
+  }
+  backToHome() {
+    this._router.navigate(['admin/user/new']);
   }
 }

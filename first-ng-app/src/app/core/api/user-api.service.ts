@@ -50,7 +50,6 @@ export class UserApiService {
   delete(id: number): Observable<null> {
     return this.httpClient.delete<null>(`/users/${id}`);
   }
-
   logout() {
     return this.httpClient.get<any>(`/logout`);
   }

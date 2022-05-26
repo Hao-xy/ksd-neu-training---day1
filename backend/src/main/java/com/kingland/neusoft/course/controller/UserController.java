@@ -2,6 +2,7 @@ package com.kingland.neusoft.course.controller;
 
 import com.kingland.neusoft.course.mapper.dao.UserModel;
 import com.kingland.neusoft.course.service.UserService;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
@@ -87,4 +88,10 @@ public class UserController {
             return ResponseEntity.notFound().build();
         }
     }
+    public ResponseEntity selectUser(@PathVariable("id") Long userId)
+    {
+        return  ResponseEntity.notFound().build();
+    }
+
+
 }
