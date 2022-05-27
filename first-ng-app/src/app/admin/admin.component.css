@@ -1,0 +1,86 @@
+ul,p,li,body {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+.dy{
+  width:100%;
+  display:flex;
+}
+.box p{
+  font-size: 40px;
+  margin:15px;
+  text-align:center;
+}
+.big{
+  width:18%;
+}
+.box1{
+  width:98%;
+  height:290px;
+  margin: 0 30px;
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(232, 73, 0, 0.74);
+
+}
+.box1 img{
+  width:100px;
+  margin:10px 70px;
+  border-radius: 50%;
+}
+.box1 h2{
+  font-size: 18px;
+  text-align:center;
+  color:#fff;
+}
+
+.box2{
+  width:98%;
+  height:500px;
+  margin: 0 30px;
+  background-color: rgba(232, 128, 0, 0.74);
+}
+.box2 p{
+  width:100%;
+  text-align:center;
+  padding:10px;
+  color:#fff;
+  font-size: 25px;
+}
+.big2{
+  width:82%;
+  margin:0 50px;
+}
+.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333;
+
+}
+.slist img {
+  width: 11em;
+  height: 7em;
+  padding-right: 0.3em;
+  padding-top: .5em;
+}
+.listA {
+  width: 90%;
+  font-size: 1em;
+  padding-top: 1.8em;
+  padding-left:2em;
+}
+
+.listB {
+  font-size: .8em;
+  width: 90%;
+  display: flex;
+  padding-top: .8em;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(93, 93, 93);
+}
